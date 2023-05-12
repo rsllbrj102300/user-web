@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "166498548375",
+    "project_id": "djrapp-5e308",
+    "storage_bucket": "djrapp-5e308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166498548375:android:c256925714c805b57807d2",
+        "android_client_info": {
+          "package_name": "com.djr.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166498548375-vtdndlm9sj0aucugti4ucjdjqi172fks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm5WsDYQNUUQz5tvdq-7Lisg1xywOIPvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166498548375-vtdndlm9sj0aucugti4ucjdjqi172fks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

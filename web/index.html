@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+    <base href="/" />
+    <meta name="google-signin-client_id" content="YOUR_AUTH_CLIENT_ID" />
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="description" content="GroFresh." />
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="djr_shopping" />
+    <link rel="apple-touch-icon" href="icons/app_logo.png" />
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <title>DJR Shopping</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+    <!--  <script src="/__/firebase/8.4.2/firebase-app.js"></script>-->
+    <!--  <script src="/__/firebase/init.js"></script>-->
+
+    <!-- // Other stuff -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm5WsDYQNUUQz5tvdq-7Lisg1xywOIPvE&callback=Function.prototype"></script>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/firebase-messaging-sw.js");
+        });
+        window.addEventListener("flutter-first-frame", function () {
+          navigator.serviceWorker.register("flutter_service_worker.js");
+        });
+      }
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js"></script>
+
+    <div class="center">
+      <div class="logo"><img src="logo.png" alt="logo" width="250px" /></div>
+      <center><h2>DJR Trading Hardware Shopping</h2></center>
+      <div class="loader">
+        <img src="loading.gif" alt="loader" width="250px" />
+      </div>
+    </div>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyB5fUpucFP5VWKK24yq36X-3_l60DMkadY",
+        authDomain: "djrapp-5e308.firebaseapp.com",
+        projectId: "djrapp-5e308",
+        storageBucket: "djrapp-5e308.appspot.com",
+        messagingSenderId: "166498548375",
+        appId: "1:166498548375:web:cfe373443aa6d9337807d2",
+        measurementId: "G-TS11ZPQ804",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script
+      src="main.dart.js?version=6.1"
+      type="application/javascript"
+    ></script>
+  </body>
+</html>
